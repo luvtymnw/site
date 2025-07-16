@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="manifest" href="/manifest.json">
+  <meta charset="UTF-8">
+  <title>Избранное</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Избранные книги</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="genres.html">Жанры</a>
+      <a href="favorites.html" class="active">Избранное</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Мои любимые книги:</h2>
+    <div class="book-list">
+      <div class="book-item">
+        <a href="https://www.litres.ru/dzh-k-rouling/garri-potter-i-filosofskiy-kamen-189428/" target="_blank">
+          <img src="img/harrypotter.jpg" alt="Гарри Поттер" class="book-cover">
+          <h3>Гарри Поттер</h3>
+          <p>Автор: Дж. К. Роулинг</p>
+          <p>Рейтинг: ★★★★★</p>
+          <p>История о юном волшебнике и его друзьях, борющихся против темных сил.</p>
+        </a>
+      </div>
+      
+      <div class="book-item">
+        <a href="https://www.litres.ru/dzhordzh-oruell/1984-145915/" target="_blank">
+          <img src="img/1984.jpg" alt="1984" class="book-cover">
+          <h3>1984</h3>
+          <p>Автор: Джордж Оруэлл</p>
+          <p>Рейтинг: ★★★★☆</p>
+          <p>Антиутопия о тоталитарном обществе и борьбе за свободу мысли.</p>
+        </a>
+      </div>
+      
+      <div class="book-item">
+        <a href="https://www.litres.ru/artur-konan-doyl/priklyucheniya-sherloka-holmsa-sobranie-sochineniy-32300691/" target="_blank">
+          <img src="img/sherlock.jpg" alt="Шерлок Холмс" class="book-cover">
+          <h3>Шерлок Холмс</h3>
+          <p>Автор: Артур Конан Дойл</p>
+          <p>Рейтинг: ★★★★★</p>
+          <p>Приключения гениального детектива и его верного друга доктора Ватсона.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Моя книжная полка</p>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker работает!'))
+        .catch((err) => console.error('Ошибка:', err));
+    }
+  </script>
+</body>
+</html>
