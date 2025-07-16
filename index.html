@@ -31,7 +31,7 @@
   </footer>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('/site/service-worker.js')
       .then(() => console.log('Service Worker работает!'))
       .catch((err) => console.error('Ошибка:', err));
   }
