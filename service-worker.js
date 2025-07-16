@@ -1,15 +1,15 @@
-const CACHE_NAME = 'book-shelf-v1';
+const CACHE_NAME = 'site-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/genres.html',
-  '/favorites.html',
-  '/contact.html',
-  '/css/style.css',
-  '/img/favicon.ico',
-  '/img/harrypotter.jpg',
-  '/img/1984.jpg',
-  '/img/sherlock.jpg'
+  '/site',
+  '/site/index.html',
+  '/site/genres.html',
+  '/site/favorites.html',
+  '/site/contact.html',
+  '/site/css/style.css',
+  '/site/img/favicon.ico',
+  '/site/img/harrypotter.jpg',
+  '/site/img/1984.jpg',
+  '/site/img/sherlock.jpg'
 ];
 
 self.addEventListener('install', (event) => {
